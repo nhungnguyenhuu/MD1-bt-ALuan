@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function timSoNguyenTo(N) {
+        for(let i = 2; i<=N ; i++){
+           if(checkSNT(i)){
+               document.write(i + " ");
+           }
+    }}
+    function checkSNT(n) {
+        for(let j= 2; j<n; j++){
+            if (n%j==0){
+                return false;
+            }
+        }
+        return  true;
+    }
+    timSoNguyenTo(33);
+</script>
+</body>
+</html>

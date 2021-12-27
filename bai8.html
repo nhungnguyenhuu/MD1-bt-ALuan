@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function inDay(N) {
+        let a= 0;
+        let b = 1;
+        let c= a+ b;
+        for(let i = 0; b<=N; i++){
+            document.write(b+ " ");
+            a= b;
+            b= c;
+            c= a+b;
+        }
+    }
+    inDay(33);
+</script>
+</body>
+</html>

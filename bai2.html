@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<p>Nhap so nguyen bat ky</p>
+<input onchange="inSoChan()" id="N" type="text">
+<script>
+    function inSoChan() {
+        let N = document.getElementById("N").value;
+        for (let i = 1; i<= N; i++){
+            if(i%2==0){
+                document.write(i+ ", ");
+            }
+        }
+    }
+    inSoChan();
+
+</script>
+</body>
+</html>
